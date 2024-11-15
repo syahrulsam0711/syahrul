@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavendula Laundry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Memastikan hanya memuat Font Awesome satu kali -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Header dan Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="images/laundry-logo.png" alt="Lavendula Laundry" class="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#contact">Kontak</a></li>
+                <li><a href="#pricing">Harga</a></li>
+                <li><a href="./alamat.html">Alamat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Selamat Datang di NAYLA LAUNDRY</h1>
+            <p>Jasa Laundry Pakaian yang Berkualitas dengan Harga Terjangkau</p>
+            <a href="#services" class="cta-btn">Lihat Layanan Kami</a>
+        </div>
+    </section>
+
+    <!-- Layanan Kami -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Layanan Kami</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <img src="images/laundry-service.jpg" alt="Laundry Kiloan">
+                    <h3>Laundry Kiloan</h3>
+                    <p>Cuci pakaian dengan harga bersaing dan layanan cepat.</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/laundry-service.jpg" alt="Setrika Pakaian">
+                    <h3>Setrika Pakaian</h3>
+                    <p>Pakaian Anda akan kami setrika rapi dan siap pakai.</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/laundry-service.jpg" alt="Cuci Sepatu">
+                    <h3>Cuci Sepatu</h3>
+                    <p>Layanan Cuci Pakaian Profesional, Pakaian Anda terlihat seperti Yang Baru Dan Kinclong.</p>
+                </div>
+            <div class="service-item">
+                <h3>Cuci Expres</h3>
+                <img src="images/laundry-service.jpg" alt="Cuci Expres">
+                <p>Pakaian Siap Antar Jemput Sesuai Waktu Yang Di Tentukan</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Harga Layanan -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Harga Layanan</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Layanan</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <td>cuci karpet</td>
+                        <td>Rp 10.000/kg</td>
+                    <tr>
+                        <td>cuci reguler</td>
+                        <td>Rp 16.000/kg</td>
+                    </tr>
+                    <tr>
+                        <td>Cuci Setrika</td>
+                        <td>Rp 20.000/kg</td>
+                    </tr>
+                    <tr>
+                        <td>Cuci & Setrika dan harum</td>
+                        <td>Rp 24.000/kg</td>
+                    </tr>
+                    <td>Cuci Expres</td>
+                        <td>Rp 30.000/kg</td>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Tentang NAYLA LAUNDRY</h2>
+            <p>Kami adalah penyedia layanan laundry yang sudah berpengalaman, menyediakan jasa cuci pakaian, Jasa Antar Jemput Pakaian, setrika,
+                dan lain-lain dengan kualitas terbaik.</p>
+            <img src="gnto.jpeg" alt="Pelanggan Bahagia" class="about-img">
+        </div>
+    </section>
+
+    <!-- Kontak Kami -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <form id="contact-form" action="submit.php" method="post">
+                <input type="text" placeholder="Nama Anda" required>
+                <input type="telepon" placeholder="Nomor Handphohe" required>
+                <textarea placeholder="Pesan Anda" required></textarea>
+                <button style="width: 100%;" type="submit" class="cta-btn w-full">Kirim Pesan</button>
+            </form>
+            <!-- Pastikan path gambar kontak benar -->
+            <img src="images/contact-image.jpg" alt="Kontak" class="contact-img">
+        </div>
+    </section>
+
+    <!-- WhatsApp dan Instagram Section -->
+    <div style="display: block; justify-content: center; align-items: center; text-align: center;">
+        <h1>Pesan Laundry Anda Lewat WhatsApp</h1>
+
+        <!-- Tombol WhatsApp dengan pesan pre-filled -->
+        <a class="whatsapp-button"
+            href="https://wa.me/6285825453794?text=Halo%2C%20saya%20ingin%20mengirimkan%20laundry%20dengan%20informasi%20berikut%3A%0ANama%3A%20John%20Doe%0ANomor%20Telepon%3A%2008123456789%0AAlamat%3A%20Jl.%20Contoh%20No.%201%2C%20Kota%20X%0ALayanan%3A%20Cuci%20Reguler%0AJumlah%3A%202%20kg">
+            Kirim Pesanan ke WhatsApp
+        </a>
+
+        <h1>Cek Profil Instagram</h1>
+        <!-- Tombol Instagram -->
+        <a class="Instagram-button" href="https://www.instagram.com/gontoooooo/?hl=en">
+            Cek Profil Instagram
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer style="width: 100%; text-align: center;">
+        <div class="container">
+            <p>&copy; 2024 NAYLA LAUNDRY. Selamat datang di NAYLA LAUNDRY jasa cuci pakaian, antar jemput pakaian siap cuci, dan lain-lain .</p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
